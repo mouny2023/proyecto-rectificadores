@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Evequoz</title>
+</head>
+<body>
+    <header>Evequoz</header>
+    <nav><a href="index.html" class="rec">Home </a><a href="servicios.html" class="rec">Servicios</a><a href="trabajaconnosotros.html" class="rec">Trabaja con nosotros </a><a href="contacto.html" class="rec">Contacto</a></nav>
+    
+    <h1>Formulario de contacto</h1>
+
+    <form action="procesar_formulario.php" method="POST">
+
+        <label for="Nombre completo">Nombre completo:</label>
+        <input type="text" name="Nombre completo" id="Nombre completo" placeholder="Ingresa tu nombre completo..."><br><br>
+
+        <label for="Dirección de correo electrónico">Dirección de correo electrónico:</label>
+        <input type="text" name="Dirección de correo electrónico" id="Dirección de correo electrónico" placeholder="Ingresa tu correo electrónico..."><br><br>
+
+        <label for="Número de teléfono">Número de teléfono:</label>
+        <input type="text" name="Número de teléfono" id="Número de teléfono" placeholder="Ingresa tu número de teléfono..."><br><br>
+
+        <label for="pais">País:</label>
+        <select name="pais" id="pais">
+            <option value="">Selecciona un país</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Perú">Perú</option>
+            <option value="China">China</option>
+            <option value="Estados-unidos">Estados-unidos</option>          
+
+        </select>
+
+        <br><br>
+        <label for="comentarios">Comentarios:</label>
+        <textarea name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí..."></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+
+    </form>
+   
+    
+    
+    
+    
+    <footer>COPYRIGHT © 2023</footer>     
+</body>
+</html>
