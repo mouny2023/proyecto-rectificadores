@@ -1,28 +1,133 @@
 * {
-    background-color: rgb(123, 179, 122);
-
+    background-color: white;
+    box-sizing: border-box;   
 }
 
-header{
+body {   
+    margin: 0;
+  }
+  
+/* Anchos máximos y medias queries */
+.header-container  {
+    background-color: greenyellow;
+     padding: 5%;
     text-align: center;
-    font-size: 32px;
+   
+}
+.año{
+
+   background-color: greenyellow;
+   padding: 2%;
+}
+
+.desc{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navigation {
+    overflow: hidden; 
+    background-color: greenyellow;     
+}
+
+.navigation > * {  
+    text-decoration: none;
+    font-size: 1rem;      
+    font-weight: bold;    
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: greenyellow;    
+    margin: -1px 0; 
+    width: 100%;   
+    height: 100%;   
+    padding: 2%; 
+    margin-bottom: 0%;
+}
+
+@media (min-width: 768px) {
+    .navigation > * {  
+       height: 200vh;  
+    }   
+}   
+
+@media (min-width: 1024px) {
+    .navigation > * {    
+       height: 200vh;        
+    }    
+}
+
+.form-box {
+  max-width: 30rem;   
+  margin: 0 auto;     
+  padding: 2rem;      
+  border: 1px solid #ccc;  
+  border-radius: .5rem;  
+}
+
+.map-container,  
+.form-box {   
+  width: 50%;
+}
+
+iframe {
+  max-width: 100%;       
+}
+
+/* Medias queries */
+@media (max-width: 50rem) {
+  .map-container,        
+  .form-box {   
+    width: 100%;  
+  } 
+}
+
+/* Más medias queries  */
+@media (min-width: 64rem) {
+  .column {
+     width: 33.33%;  
+  }
+}
+
+.form-box{
+    display: block;
+}
+
+/* Unidades relativas */
+header h1 a {
+    font-size: 3rem;   
+}  
+
+header p a {
+    font-size: 1.25rem;
+}
+
+/* Más relleno y márgenes */
+.copyright{
+    background-color: greenyellow;
     font-weight: bold;
-    margin: 10px;
-    padding: 10px;
-    
+    text-align: center;
+    margin-top: 0%;
+
+}
+.datos-empresa a {
+    background-color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    display: block;
+   
+}
+.footer{
+    background-color: greenyellow;
+}
+.form-box {
+    margin-left: auto;
+  }
+
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-nav{
-    background-color: rgb(162, 218, 162); 
-}
 
-.descr{
-    font-style: 
-    text-align: left;
-}
 
-.rec{
-    border: #000000 1px solid;
-    border-radius: 10%;
-    background-color: rgb(162, 218, 162); 
-}
+
+
